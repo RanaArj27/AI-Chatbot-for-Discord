@@ -3,6 +3,15 @@ A customizable AI chatbot for discord made in JavaScript with the Google Gemini 
 
 # Installation
 
+## Preqrequisites
+Have an IDE installed
+
+Install the latests version of node.js
+
+A Discord account
+
+A Google account
+
 ## Creating the Bot
 Go to discord.com/developers/applications and create an application
 
