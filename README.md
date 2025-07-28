@@ -18,6 +18,7 @@ Go to discord.com/developers/applications and create an application
 Once it is created, you can set the name, profile photo, and description
 
 Under the Bot tab, turn on all of the options under "Privileged Gateway Intents" and turn on "Public Bot" under Authorization Flow
+
 <img width="394.25" height="223.25" alt="image" src="https://github.com/user-attachments/assets/834cee0e-379e-49da-9ad6-7cf743684208" />
 
 Under the OAuth2 tab, tick the "bot" and "application.commands" boxes, then grant the bot the permissions you want it to have in the Discord server
@@ -36,19 +37,36 @@ Open the folder in a IDE
 
 In the ".env" file, paste your Gemini API key into the "GEMINI_API_KEY" variable (aistudio.google.com), and your Discord bot token into "TOKEN"
 
-## Customization and Launching
+## Customization
+### In the main file "index.js", there are instructions for many available parameters with bot customization options including
 
-In the main file "index.js", there are many available parameters with bot customization options including
+  -personality
 
--personality
+  -rate limits
 
--rate limits
+  -user exceptions
 
--user exceptions
+  -active channels
 
--active channels
+  -and more
 
--and more
+## Launching
 
-### To bring the bot online, open a new terminal and run 'node index.js' // Kill the terminal to bring it offline 
+### Open a new terminal and run the following commands:
+
+  npm init -y
+
+  npm install discord.js
+
+  npm install dotenv
+
+  npm install node-fetch
+
+### To launch the bot, run:
+
+node index.js (in a new terminal)
+
+### To bring it offline 
+
+kill the terminal
 
